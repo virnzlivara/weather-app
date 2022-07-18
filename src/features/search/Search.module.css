@@ -1,0 +1,33 @@
+.searchtextbox {
+   width: 100%; 
+   border-radius:50px;
+   background: transparent;
+   border-color: transparent;
+   font-size: 45px;
+   font-family: url('/public/assets/fonts/Roboto-Bold.ttf'); 
+   font-weight: 700;
+   padding: 10px;
+   padding-left: 25px; 
+}
+
+.searchtextbox:hover {
+   width: 100%;
+   border-radius:50px;
+   /* background: white; */
+   /* opacity: 40%; */
+   background: rgba(255, 255, 255, 0.5);
+   border-color: unset;
+   /* border-color: rgba(255, 255, 255, 0.5);   */
+   color: gray
+}
+
+.searchtextbox:focus {
+   outline: none;
+   padding-left: 25px;
+}
+
+::placeholder { 
+   color: white;
+   opacity: 40%;
+} 
+

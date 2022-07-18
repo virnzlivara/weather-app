@@ -1,0 +1,44 @@
+.weatherContainer {
+    /* min-height: 150px; 
+    min-width: 150px;  */
+    /* margin: 20px; */
+    /* width: 90%;  */
+    background: rgba(255, 255, 255, 0.5);
+    border-radius:50px;
+    display: flex;
+    margin-top: 40px;
+}
+
+.twoCol {
+    flex-direction: row;
+}
+
+.weatherIcon {
+    height: 30vh;
+    margin: 50px;
+    float: left;
+}
+
+.weatherDetails {
+    height: 30vh;
+    margin: 50px;
+    float: left;
+}
+
+.countryText {
+    font-size: 30px
+}
+
+.temperatureText {
+    font-size: 140px
+
+}
+
+.weatherDescription {
+    font-size: 20px
+}
+
+.moreSection { 
+}
+ 
+ 
