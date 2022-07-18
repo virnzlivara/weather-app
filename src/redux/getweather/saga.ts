@@ -7,7 +7,6 @@ import { getWeatherForecast } from '../../utils/HttpUtility';
 
 class WeatherSaga {
     public static *searchWeather(payload: IPayload): Iterable<any>{
-        debugger;
         const actionType: string = WEATHERCONSTANT.GET_WEATHER;
         // const API_KEY= "e4e930ec2b141d3f95fccc9f633b7ca0";
         // const data = payload.payload;
