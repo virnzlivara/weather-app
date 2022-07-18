@@ -19,7 +19,7 @@ export function WeatherContainer() {
             <div className = {styles.temperatureText} >  29 F  </div>
             <div className = {styles.weatherDescription} > Shower  </div>
        </div>
-       <div className = {styles.weatherDetails} >
+       <div className = {styles.weatherDetails}   >
              <MoreSection/>
        </div>
         

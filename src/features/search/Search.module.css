@@ -1,5 +1,5 @@
 .searchtextbox {
-   width: 100%; 
+   /* width: 100%;  */
    border-radius:50px;
    background: transparent;
    border-color: transparent;
@@ -12,12 +12,9 @@
 
 .searchtextbox:hover {
    width: 100%;
-   border-radius:50px;
-   /* background: white; */
-   /* opacity: 40%; */
+   border-radius:50px; 
    background: rgba(255, 255, 255, 0.5);
-   border-color: unset;
-   /* border-color: rgba(255, 255, 255, 0.5);   */
+   border-color: unset;  
    color: gray
 }
 
