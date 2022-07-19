@@ -5,8 +5,9 @@
     margin-top: 35px;  
 } 
 
-.weatherContainer::after{
-    content: url(../../icons/dots.svg);
+/* .weatherContainer::after{ */
+.menuButton {
+    /* content: url(../../icons/dots.svg);
     margin: 20px;
     background-color: white;
     height: 65px;
@@ -17,7 +18,10 @@
     align-content: center;
     line-height: 65px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5); 
+    background: rgba(255, 255, 255, 0.5);  */
+    position: relative;
+    right: 15px;
+    top: 15px;
 } 
 .weatherContainer2 {  
     border-radius:50px;  

@@ -1,7 +1,8 @@
 import { IWeatherResponse } from "./IWeatherResponse";
 
 export interface IWeatherState {
-  weather: IWeatherResponse; 
+  data: any;
+  status: string; 
     
 }
  
