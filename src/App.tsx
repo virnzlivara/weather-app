@@ -1,17 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import  './App.css'; 
-import { WeatherContainer } from './features/weather/Weather';
+ 
+ 
+import WeatherContainer from './features/weather/Weather';
 import SearchField from './features/search/SearchField';
-function App() {
+import styles from './App.module.css'; 
+import { useEffect, useState } from 'react';
+const App = () => {
+  const [weatherList, setWeatherList] = useState<any>([]);
+  useEffect(()=>{ 
+    const item = localStorage.getItem("savedWeather") || []
+    if (item !== undefined && item.length > 1) {
+      setWeatherList(item);
+    }
+  }, [])
   return (
     <div>
-    <div className="AppBg">
-      <div className='BgContainer'>
+    <div className={styles.AppBg}>
+      <div className={styles.BgContainer}>
         <SearchField></SearchField>
-        <WeatherContainer></WeatherContainer>
-        
+        <WeatherContainer city={weatherList[0]}/> 
+        <div>
+          {weatherList && weatherList.length >=2 && weatherList.map((item: any, index: number)=>{
+            if (index !== 1){
+              <WeatherContainer type='Small' city={weatherList[index]}/>
+            }
+          })}
+        </div>
        </div>
       
     </div>

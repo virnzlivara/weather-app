@@ -1,6 +1,4 @@
-export interface IPayload {
-    error: boolean;
-    meta: string | null | undefined;
+export interface IPayload { 
     payload: any;
     type: string;
 }

@@ -6,12 +6,11 @@ import { IPayload } from '../../utils/IPayload';
 import { getWeatherForecast } from '../../utils/HttpUtility';
 
 class WeatherSaga {
-    public static *searchWeather(payload: IPayload): Iterable<any>{
+    public static *searchWeather(payload: IPayload): Iterable<any>{ 
         const actionType: string = WEATHERCONSTANT.GET_WEATHER;
-        // const API_KEY= "e4e930ec2b141d3f95fccc9f633b7ca0";
-        // const data = payload.payload;
-        const endpoint = `https://api.openweathermap.org/data/2.5/weather?lat=35.652832&lon=139.839478&appid=e4e930ec2b141d3f95fccc9f633b7ca0`;
-        
+        const API_KEY= "e4e930ec2b141d3f95fccc9f633b7ca0";
+        const city = payload.payload;
+        const endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
         try {
             
             const response : any = yield getWeatherForecast(endpoint);

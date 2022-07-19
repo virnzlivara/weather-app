@@ -1,26 +1,28 @@
 .searchtextbox {
-   /* width: 100%;  */
+   width: calc(100% - 45px); 
    border-radius:50px;
    background: transparent;
    border-color: transparent;
    font-size: 45px;
    font-family: url('/public/assets/fonts/Roboto-Bold.ttf'); 
    font-weight: 700;
-   padding: 10px;
-   padding-left: 25px; 
+   padding: 0px 10px 0px 25px; 
+   height: 70px; 
 }
 
 .searchtextbox:hover {
-   width: 100%;
+   width: calc(100% - 45px); 
    border-radius:50px; 
-   background: rgba(255, 255, 255, 0.5);
+   background: rgba(255, 255, 255, 0.5) url(../../icons/tabtocycle.png) right no-repeat;
    border-color: unset;  
-   color: gray
-}
+   color:black; 
+   content: "Tab to cycle";
+} 
 
 .searchtextbox:focus {
    outline: none;
    padding-left: 25px;
+   width: calc(100% - 45px); 
 }
 
 ::placeholder { 

@@ -1,7 +1,17 @@
 export interface IWeatherResponse {
-    lat: number,
-    lon: number,
-    current: any
+    base: string;
+    clouds: any;
+    cod: number;
+    coord: any
+    dt: number;
+    id: number;
+    main: any;
+    name: string
+    sys: any;
+    timezone: number;
+    visibility: number;
+    weather: any[];
+    wind: any;
     
 }
 

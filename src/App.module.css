@@ -1,0 +1,13 @@
+.App {
+  text-align: center; 
+}
+
+.AppBg {   
+  background: url('/public/rain.jpg') center fixed;    
+  height:100vh;   
+}
+
+.BgContainer {
+  padding: 10px 55px;
+  
+}
