@@ -18,7 +18,6 @@ const WeatherContainer = (props:IProps) : JSX.Element=> {
   const [status, setStatus] = useState("")
   const searchSelector = useAppSelector(selectWeather);
   useEffect(()=>{  
-    debugger;
     if (city !== undefined && city !== "" && city !== null && weather === undefined && status === "") {
       setStatus("loading")
       const searchPromise = dispatch(searchWeatherAsync(city))

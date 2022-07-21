@@ -3,8 +3,10 @@
 }
 
 .AppBg {   
-  background: url('/public/rain.jpg') center fixed;    
-  height:100vh;   
+  background: fixed;  
+  background-position: center;
+  /* background-image: url('/public/rain.jpg');     */
+ 
 }
 
 .BgContainer {
