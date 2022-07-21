@@ -6,7 +6,7 @@
   background: fixed;  
   background-position: center;
   /* background-image: url('/public/rain.jpg');     */
- 
+  height:100vh;   
 }
 
 .BgContainer {
