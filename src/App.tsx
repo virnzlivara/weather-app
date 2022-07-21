@@ -15,7 +15,7 @@ const App = () => {
   return (
     <div>
     <div className={styles.AppBg}>
-      <div className={styles.BgContainer} style={{background: `url('/${bgImage}.jpg') center fixed`}}>
+      <div className={styles.BgContainer}  style={{background: `url('/${bgImage}.jpg') center fixed`, height : '100vh'}} >
         <SearchField backgroundHandler= {setupBackground}></SearchField> 
        </div>
       

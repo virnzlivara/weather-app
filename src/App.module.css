@@ -5,7 +5,7 @@
 .AppBg {   
   background: fixed;  
   background-position: center;
-  /* background-image: url('/public/rain.jpg');     */
+  background-image: url('/public/rain.jpg');    
   height:100vh;   
 }
 
