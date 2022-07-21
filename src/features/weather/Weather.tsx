@@ -1,6 +1,6 @@
  
 import styles from './Weather.module.css'; 
-import weather1 from '../../icons/weather1.svg'  
+import cloud from '../../icons/cloud.svg'  
 import { useEffect, useState } from 'react'; 
 import MoreSection from '../more/More';
 import { useAppSelector, useAppDispatch } from '../../app/hooks';
@@ -15,8 +15,8 @@ const WeatherContainer = (props:IProps) : JSX.Element=> {
   const city = props.weatherData?.payload.name || props.city;
   const dispatch = useAppDispatch();
   const [weather, setWeatherData] = useState(props.weatherData?.payload);
-  const [status, setStatus] = useState("")
-  const searchSelector = useAppSelector(selectWeather);
+  const [status, setStatus] = useState("") 
+  const [weatherImage, setWeatherImage] = useState<any>(cloud);
   useEffect(()=>{  
     if (city !== undefined && city !== "" && city !== null && weather === undefined && status === "") {
       setStatus("loading")
@@ -49,7 +49,7 @@ const WeatherContainer = (props:IProps) : JSX.Element=> {
       <div className={type === "Small" ? styles.weatherContainer2Small : styles.weatherContainer2}>
         <div className={styles.twoCol}>
           <div className={styles.col1}>
-            <img className = {type === "Small" ? styles.weatherIconSmall : styles.weatherIcon} src={weather1} /> 
+            <img className = {type === "Small" ? styles.weatherIconSmall : styles.weatherIcon} src={weatherImage} /> 
         </div> 
         <div className = {styles.col2} >
               <div className = {type === "Small" ? styles.countryTextSmall : styles.countryText} > {city} </div>
